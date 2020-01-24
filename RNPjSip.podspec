@@ -14,6 +14,8 @@ Pod::Spec.new do |s|
   s.platform            = :ios, "8.0"
   s.source_files        = "ios/RTCPjSip/*.{h,m}"
 
+  s.compiler_flags      = "-DPJ_AUTOCONF"
+  
   s.ios.vendored_frameworks = "ios/VialerPJSIP.framework"
 
   s.dependency 'React-Core'
